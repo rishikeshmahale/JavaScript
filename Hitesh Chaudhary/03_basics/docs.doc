@@ -1,0 +1,3 @@
+in javascript scope
+
+the variables has scope untill the curly braces and can also be accessed by functions or conditionals inside function or conditionals.
