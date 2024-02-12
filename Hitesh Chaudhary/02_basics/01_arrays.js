@@ -34,9 +34,26 @@ const unshiftArr = myArr1.unshift(1)
 
 // questionaire methods
 
-console.log(myArr1.includes(9));
-console.log(myArr1.indexOf(9)); // -1 since it doesnt exist
-console.log(myArr1.indexOf(3)) // 2
+// console.log(myArr1.includes(9));
+// console.log(myArr1.indexOf(9)); // -1 since it doesnt exist
+// console.log(myArr1.indexOf(3)) // 2
 
-const newArr = myArr1.join();
-console.log(newArr);
+// const newArr = myArr1.join();
+// console.log(newArr);
+// console.log(typeof newArr);  // string
+
+
+// slice
+// console.log("A ", myArr1);
+
+// console.log(myArr1.slice(1, 3));  // retruns the arrays with the required values excluding the range
+
+// console.log("B ", myArr1);  // does not modify the original array
+
+
+// splice
+console.log("A ", myArr1);
+
+console.log(myArr1.splice(1, 3)); // retruns the arrays with the required values including the range
+
+console.log("B ", myArr1);  // does modify the original array
