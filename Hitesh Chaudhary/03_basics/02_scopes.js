@@ -1,4 +1,7 @@
 
+ 
+//  {} curly braces in javascript are scope.
+
 
 function one() {
     
@@ -58,6 +61,4 @@ const addTwo = function (num) {
 }
 
 addTwo(5);
-
-
 
