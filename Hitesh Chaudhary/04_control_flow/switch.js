@@ -65,7 +65,9 @@ switch (day) {
     default:
         console.log(`${day}`);
         break;
-}
+};
+
+
 
 
 
