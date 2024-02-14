@@ -32,6 +32,42 @@ switch (month) {
         console.log("Default case match");
         break;
     
-    
 }
+
+
+// In case of stings
+
+let day = "wed";
+
+switch (day) {
+    case "mon":
+        console.log(`${day}`);
+        break;
+    case `${day}`: // OR
+        console.log(`${day}`);
+        break;
+    case `${day}`:
+        console.log(`${day}`);
+        break;
+    case `${day}`:
+        console.log(`${day}`);
+        break;
+    case `${day}`:
+        console.log(`${day}`);
+        break;
+    case `${day}`:
+        console.log(`${day}`);
+        break;
+    case `${day}`:
+        console.log(`${day}`);
+        break;
+    
+    default:
+        console.log(`${day}`);
+        break;
+}
+
+
+
+
 
