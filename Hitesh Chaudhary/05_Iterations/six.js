@@ -104,7 +104,13 @@ const books = [
 // const userBooks = books.filter((book) => book.genre == "History");
 // const userBooks = books.filter((book) => book.genre.includes("Science"));
 
-const userBooks = books.filter((book) => book.published >= "2000");
+// const userBooks = books.filter((book) => {
+//     return book.published >= "1995"
+// });
+
+const userBooks = books.filter((book) => {
+    return book.published >= "1995" && book.genre == "History"
+});
 
 console.log(userBooks)
 
