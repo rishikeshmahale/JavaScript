@@ -37,3 +37,16 @@ console.log(0 == NaN);  // false
 console.log(0 === NaN);  // false
 
 
+
+// Nullish Coalescing Operator (??) : null undefined
+
+
+let val1;
+// val = 5 ?? 10;  // 5
+// val = null ?? 10;  // 10
+// val = undefined ?? 5 // 5
+
+// val = null ?? 10 ?? 5  // 10
+val = undefined ?? 5 ?? 10   // 5
+
+console.log(val);
