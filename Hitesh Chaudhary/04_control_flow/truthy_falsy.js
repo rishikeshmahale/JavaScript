@@ -50,3 +50,46 @@ let val1;
 val = undefined ?? 5 ?? 10   // 5
 
 console.log(val);
+
+
+
+// Ternary operator
+
+// condition ? true : fals
+
+const teaPrice = 100;
+
+console.log(teaPrice > 80 ? "Expensive" : "Affordable");
+
+console.log(teaPrice < 120 ? "affordable" : "Expensive");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
