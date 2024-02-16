@@ -16,6 +16,8 @@ const myNewNums = myNums.map((num) => {
 console.log("newNums : ", newNums);
 
 
+// 21:00
+
 
 
 
