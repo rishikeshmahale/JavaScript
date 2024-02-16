@@ -19,7 +19,7 @@ const newValues = coding.map((item, index) => {
     return item;
 });
   
-console.log(newValues);  // [ 'Js', 'Java', 'Ruby', 'Python', 'C++' ]
+// console.log(newValues);  // [ 'Js', 'Java', 'Ruby', 'Python', 'C++' ]
 
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -31,12 +31,12 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let newNums = myNums.filter((num) => {
     return num > 4
 });
-console.log(newNums);  // [ 5, 6, 7, 8, 9, 10 ]
+// console.log(newNums);  // [ 5, 6, 7, 8, 9, 10 ]
 
 
 
 const myNumVales = [];
-console.log(myNumVales);
+// console.log(myNumVales);
 
 myNums.forEach((nums) => {
     if (nums > 4) {
@@ -44,7 +44,7 @@ myNums.forEach((nums) => {
     }
 });
 
-console.log(myNumVales);
+// console.log(myNumVales);
 
 
 const books = [
@@ -113,6 +113,73 @@ const userBooks = books.filter((book) => {
 });
 
 // console.log(userBooks)
+
+
+
+const chainNums = myNums
+    .map(num => num * 10)
+    .map(num => num + 1)
+    .filter(num => num > 40);
+    
+// console.log(chainNums);
+
+
+// Reduce
+
+const myTotal = myNums.reduce(function (acc, currVal) {
+    console.log(`accumulator : ${acc} and current value ${currVal} `);
+    return acc + currVal;
+}, 0);
+
+console.log(myTotal);
+
+
+const sumOfNums = myNums.reduce((acc, currVal) => acc + currVal, 0);
+console.log(sumOfNums);
+
+
+
+
+const sumOfChainNums = myNums.
+    map(num => num * 10)
+    .map(num => num + 1)
+    .filter(num => num > 40)
+    .reduce(function (acc, currVal) {
+        return acc + currVal
+    }, 0 );
+
+
+console.log(sumOfChainNums);
+
+
+
+const shoppingCart = [
+    {
+        itemName: "JS Course",
+        price: 300
+    },
+    {
+        itemName: "PY Course",
+        price: 400
+    },
+    {
+        itemName: "Data Scientist Course",
+        price: 15000
+    },
+    {
+        itemName: "Mobile dev Course",
+        price: 9000
+    },
+];
+
+const total = shoppingCart.map((item) => item.price).reduce((acc, price) => {
+    return acc + price;
+}, 0);
+console.log(total);   // OR
+
+const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0);
+console.log(priceToPay);
+
 
 
 
